@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/17/26||03:29:25" using="Simscape Multibody Link Version 7.4" from="SolidWorks 33.1.2"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="kuka" uid="kuka" version="141">
+<AssemblyFile name="kuka.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="5-1" uid="5-1" entityUid="5*:*Default">
+<Transform>
+<Rotation>6.9829626776862667e-15 -1 0 -6.9829626776862793e-15 0 -1 1 6.9829626776862667e-15 -6.9829626776862793e-15</Rotation>
+<Translation>0.28249999999999831 1.8014999999999994 -0.018000000000010202</Translation>
+</Transform>
+</Instance>
+<Instance name="1-1" uid="1-1" grounded="true" entityUid="1*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="2-1" uid="2-1" entityUid="2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1.04744440165294e-14 1 0 -1 1.04744440165294e-14</Rotation>
+<Translation>0 0.36299999999999999 3.7585601992658104e-15</Translation>
+</Transform>
+</Instance>
+<Instance name="4-1" uid="4-1" entityUid="4*:*Default">
+<Transform>
+<Rotation>1.1102230246251565e-16 -1.0000000000000002 0 1.0000000000000002 1.1102230246251565e-16 0 0 0 1</Rotation>
+<Translation>0.28249999999999842 1.6714999999999991 -0.0180000000000223</Translation>
+</Transform>
+</Instance>
+<Instance name="3-1" uid="3-1" entityUid="3*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.25999999999999823 0.64499999999999957 0.11499999999999769</Translation>
+</Transform>
+</Instance>
+<Instance name="6-1" uid="6-1" entityUid="6*:*Default">
+<Transform>
+<Rotation>0 6.982962677686258e-15 1 1 -1.0470790900996008e-14 0 1.0470790900996008e-14 1 -6.9829626776862557e-15</Rotation>
+<Translation>0.35049999999999848 1.9914999999999992 -0.018000000000022873</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>1-1</Uid>
+</InstancePath>
+<Position>0 0.36299999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>1-1</Uid>
+</InstancePath>
+<Position>0 0.36299999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>2-1</Uid>
+</InstancePath>
+<Position>0 0 0.009000000000000008</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>2-1</Uid>
+</InstancePath>
+<Position>0.26000000000000001 -0.074999999999999997 0.28200000000000003</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>3-1</Uid>
+</InstancePath>
+<Position>0 0.12633329089568357 -0.040000000000000008</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>2-1</Uid>
+</InstancePath>
+<Position>0.26000000000000001 -0.074999999999999997 0.28200000000000003</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>3-1</Uid>
+</InstancePath>
+<Position>0 0 -0.040000000000000008</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>3-1</Uid>
+</InstancePath>
+<Position>0 0.68000000000000016 -0.0030000000000000027</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>4-1</Uid>
+</InstancePath>
+<Position>-0.34650000000000025 0.02250000000000002 0.13</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>3-1</Uid>
+</InstancePath>
+<Position>0 0.68000000000000016 -0.0030000000000000027</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>4-1</Uid>
+</InstancePath>
+<Position>-0.34650000000000025 0.02250000000000002 0.13</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>4-1</Uid>
+</InstancePath>
+<Position>0.13000000000000012 0.064000000000000029 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>4-1</Uid>
+</InstancePath>
+<Position>0.13000000000000012 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>5-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>5-1</Uid>
+</InstancePath>
+<Position>0 0.076999999999999957 -0.18999999999999995</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>6-1</Uid>
+</InstancePath>
+<Position>0 0 -0.14499999999999996</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica5">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>5-1</Uid>
+</InstancePath>
+<Position>0 0.076999999999999957 -0.18999999999999995</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>6-1</Uid>
+</InstancePath>
+<Position>0 0 -0.14499999999999996</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="1" uid="1*:*Default" version="943">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>70.656654855805215</Mass>
+<CenterOfMass>-0.0012049510400427897 0.15891566716881825 0.042638726998003307</CenterOfMass>
+<Inertia>2.1527309861787649 2.2040999857885688 1.7379820494403522 0.060930218979635541 0.024318895470481178 0.0004722784556747724</Inertia>
+</MassProperties>
+<GeometryFile name="1_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.20000000000000001" g="0.20000000000000001" b="0.20000000000000001" a="1"/>
+<Diffuse r="0.20000000000000001" g="0.20000000000000001" b="0.20000000000000001" a="1"/>
+<Specular r="0.1600000023841858" g="0.1600000023841858" b="0.1600000023841858" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.10000000149011612</Shininess>
+</VisualProperties>
+</Part>
+<Part name="2" uid="2*:*Default" version="480">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>19.996648000646129</Mass>
+<CenterOfMass>0.14696347351877534 7.0411223319539646e-05 0.16308632286623639</CenterOfMass>
+<Inertia>0.43127820449810628 0.71604134843742773 0.54006018186211335 0.0035931085776506836 -0.22494616686128571 0.0064705411457373066</Inertia>
+</MassProperties>
+<GeometryFile name="2_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="3" uid="3*:*Default" version="394">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>11.860842538335003</Mass>
+<CenterOfMass>0.00016488559229122768 0.30941048621195344 0.050481166469830689</CenterOfMass>
+<Inertia>0.54636256499966918 0.055050546941519923 0.54872783180641416 -0.023509770281147851 0.00014711286667984987 -0.00047445063160077023</Inertia>
+</MassProperties>
+<GeometryFile name="3_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="4" uid="4*:*Default" version="347">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>12.08383140020957</Mass>
+<CenterOfMass>-0.23748158849771492 0.0097983621005959635 0.017389217089564042</CenterOfMass>
+<Inertia>0.056500797462036477 0.43281107249459588 0.44106526534448121 -0.0033379569505397931 0.021842248434876983 0.0096894834246214669</Inertia>
+</MassProperties>
+<GeometryFile name="4_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="5" uid="5*:*Default" version="337">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="5.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.6168653207445067</Mass>
+<CenterOfMass>-3.9216767499135228e-05 0.0083166450607446603 -0.11923356845949196</CenterOfMass>
+<Inertia>0.017120607758885589 0.016287459456171452 0.0051782753906148542 0.0015748751379793973 -8.3817239089071897e-07 -6.7449109796278315e-06</Inertia>
+</MassProperties>
+<GeometryFile name="5_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="6" uid="6*:*Default" version="395">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="6.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.8560707227038469</Mass>
+<CenterOfMass>0.05243900208488856 -4.9902781230923839e-08 -0.062540874691324327</CenterOfMass>
+<Inertia>0.012260337869981546 0.016628906193565569 0.007062128555581298 -4.0512040940331772e-08 -0.00090191972995782416 -3.4577991346824199e-08</Inertia>
+</MassProperties>
+<GeometryFile name="6_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
