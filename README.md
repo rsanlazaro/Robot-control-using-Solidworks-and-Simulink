@@ -5,8 +5,6 @@ from **SolidWorks** into **MATLAB/Simulink** using the **Simscape Multibody Link
 The result is a physics-based multibody model ready for simulation, control design, and
 analysis in Simulink.
 
----
-
 ## Table of Contents
 
 1. [Prerequisites & Software Requirements](#1-prerequisites--software-requirements)
@@ -20,8 +18,6 @@ analysis in Simulink.
 9. [Updating the Plugin](#9-updating-the-plugin)
 10. [Troubleshooting](#10-troubleshooting)
 11. [References](#11-references)
-
----
 
 ## 1. Prerequisites & Software Requirements
 
@@ -40,8 +36,6 @@ Simscape Multibody Link requires MATLAB and the CAD application to coexist on on
 - Simscape
 - Simscape Multibody
 
----
-
 ## 2. Step 1 — Install SolidWorks
 
 1. Download the SolidWorks installer from the
@@ -54,8 +48,6 @@ Simscape Multibody Link requires MATLAB and the CAD application to coexist on on
 > **Tip:** Make note of the SolidWorks version you install (e.g., SW 2024). You will need
 > to select the matching Simscape Multibody Link package later.
 
----
-
 ## 3. Step 2 — Install MATLAB & Simulink
 
 1. Download the MATLAB installer from [mathworks.com](https://www.mathworks.com/downloads/).
@@ -67,8 +59,6 @@ Simscape Multibody Link requires MATLAB and the CAD application to coexist on on
    - Simscape Multibody
 4. Complete the installation and activate your license.
 5. Launch MATLAB and verify it opens without errors.
-
----
 
 ## 4. Step 3 — Download & Install the Simscape Multibody Link Plugin
 
@@ -99,8 +89,6 @@ MATLAB installer.
    Replace the filename with the exact name of your downloaded ZIP file.
 4. Wait for the installation to complete. MATLAB will confirm success in the Command Window.
 
----
-
 ## 5. Step 4 — Register MATLAB as an Automation Server
 
 Every time the Simscape Multibody Link plugin exports a CAD assembly, it needs to
@@ -121,8 +109,6 @@ matlab -regserver
 
 > You must run whichever method you choose **with administrator privileges**. If MATLAB
 > is not registered, the export step will fail silently or throw a connection error.
-
----
 
 ## 6. Step 5 — Enable the Plugin in SolidWorks
 
@@ -149,8 +135,6 @@ Once the plugin is installed and MATLAB is registered, link the plugin to SolidW
 > **Multiple SolidWorks installations:** `smlink_linksw` adds the plugin to all copies of
 > SolidWorks on the machine, but you must manually check the Add-Ins checkbox for each
 > installation from which you want to export.
-
----
 
 ## 7. Step 6 — Export the Robotic Assembly from SolidWorks
 
@@ -180,8 +164,6 @@ SolidWorks will generate:
 > **Tip:** Keep the XML and all STL files in the **same folder**. Simscape Multibody needs
 > them together during import.
 
----
-
 ## 8. Step 7 — Import the Model into Simscape Multibody (Simulink)
 
 1. Open MATLAB and navigate to the folder containing your exported XML file.
@@ -202,8 +184,6 @@ SolidWorks will generate:
 5. From here you can add **sensors**, **actuators**, **controllers**, and **scopes** to
    simulate the robot's dynamics.
 
----
-
 ## 9. Updating the Plugin
 
 If you install a newer version of MATLAB or a newer Simscape Multibody Link release, update
@@ -215,8 +195,6 @@ the plugin as follows:
    ```
 2. Download the new plugin package from the MathWorks download page (see Step 3).
 3. Install and enable the new plugin following Steps 3–5 above.
-
----
 
 ## 10. Online libraries for CAD models
 
@@ -233,8 +211,6 @@ There are several libraries where you can download examples of robotic devices, 
 | Joints missing or wrong type | Assembly mates not set correctly | Review SolidWorks mates; use Standard Mates (Coincident, Concentric) for revolute/prismatic joints |
 | Mass/inertia values are zero | Parts have no material assigned | Assign materials in SolidWorks (**Right-click part → Material**) |
 
----
-
 ## 12. References
 
 - [Enable Simscape Multibody Link Plugin in SolidWorks — MathWorks Docs](https://la.mathworks.com/help/smlink/ref/linking-and-unlinking-simmechanics-link-software-with-solidworks.html)
@@ -243,8 +219,6 @@ There are several libraries where you can download examples of robotic devices, 
 - [`smlink_linksw` function reference](https://la.mathworks.com/help/smlink/ref/smlink_linksw.html)
 - [`smlink_unlinksw` function reference](https://la.mathworks.com/help/smlink/ref/smlink_unlinksw.html)
 - [Simscape Multibody Link Download Page](https://www.mathworks.com/campaigns/offerings/download_smlink.html)
-
----
 
 *Tutorial compiled from official MathWorks documentation. All product names (SolidWorks,
 MATLAB, Simulink, Simscape) are trademarks of their respective owners.*
