@@ -5,6 +5,8 @@ from **SolidWorks** into **MATLAB/Simulink** using the **Simscape Multibody Link
 The result is a physics-based multibody model ready for simulation, control design, and
 analysis in Simulink.
 
+Video of workshop: https://teams.microsoft.com/l/meetingrecap?driveId=b%21zPs-tQF-ekCcXY1yGVIndvffwJnIqb1OgVarrwjvF3490OQqPjb1TY-Ry9tCqOeH&driveItemId=01L73QO4VAYRBC6CVR2NHJMD7XRBF2Z45V&sitePath=https%3A%2F%2Ftecmx.sharepoint.com%2Fsites%2FTalleres_e51e70%2FShared+Documents%2FGeneral%2FRecordings%2FReuni%C3%B3n+en+General-20260318_112007-Grabaci%C3%B3n+de+la+reuni%C3%B3n.mp4%3Fweb%3D1&fileUrl=https%3A%2F%2Ftecmx.sharepoint.com%2Fsites%2FTalleres_e51e70%2FShared+Documents%2FGeneral%2FRecordings%2FReuni%C3%B3n+en+General-20260318_112007-Grabaci%C3%B3n+de+la+reuni%C3%B3n.mp4%3Fweb%3D1&threadId=19%3AYwJRekToiw5k5o_2txXf61d_kqhAvDhMhF-6qeXDVB41%40thread.tacv2&organizerId=d33c5e6f-210c-4aa9-ace4-76b9594579ab&tenantId=c65a3ea6-0f7c-400b-8934-5a6dc1705645&callId=87135dda-7a86-44e6-a82c-59819c9d5d47&threadType=space&meetingType=MeetNow&organizerGroupId=93702dc8-9a0f-48d8-85b4-5efb0bdd4d92&channelType=Standard&replyChainId=1773854276666&subType=RecapSharingLink_RecapCore
+
 ## Table of Contents
 
 1. [Prerequisites & Software Requirements](#1-prerequisites--software-requirements)
